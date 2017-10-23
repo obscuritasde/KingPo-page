@@ -1,0 +1,143 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: "Arial", sans-serif;
+}
+
+body {
+	background: #111111;
+}
+
+#head {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background: #222222;
+	box-shadow: 0px 0px 5px black;
+}
+
+#head h1 {
+	color: #DDDDDD;
+	text-align: center;
+	margin: 10px auto 10px auto;
+}
+
+#body {
+	width: 100%;
+}
+
+#articles {
+	width: 50%;
+	margin: 5em auto 10px auto;
+	background-color: #151515;
+}
+
+#articlehead {
+	background-color: #222222;
+	padding: 15px;
+	box-shadow: 0px 0px 5px black;
+}
+#post {
+	display: none;
+}
+#posten {
+	display: none;
+}
+#posten ~ label {
+	font-size: 16pt;
+	background-color: orange;
+	border-radius: 5px;
+	padding: 3px 5px 3px 5px;
+	box-shadow: 0px 0px 10px black;
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	color: black;
+}
+.clearfix:after {
+	content: ".";
+	clear: both;
+	display: block;
+	visibility: hidden;
+	height: 0px;
+}
+#posten:checked ~ #post {
+	display: block;
+}
+#post form div ul {
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid orange;
+}
+#post form div input {
+	display: none;
+}
+#post form div input:target {
+	display: block;
+
+}
+#bild {
+	height: 1.5em;
+}
+#text {
+	height: 3em;
+	resize: vertical;
+	max-height: 10em; 
+}
+
+#post {
+	margin-top: 20px;
+	border-top: 1px solid orange;
+}
+#post p {
+	font-size: 18pt;
+}
+#post input {
+	width: 95%;
+	height: 1em;
+	vertical-align: center;
+	font-size: 16pt;
+	background-color: #0F0F0F;
+	border: 1px solid orange;
+	padding: 5px;
+	margin: 0 auto 0 auto;
+	border-radius: 5px;
+}
+#post input:focus {
+	border: 1px solid orange;
+}
+
+.article {
+	width: 90%;
+	background-color: #222222;
+	margin: 20px auto 0 auto;
+	box-shadow: 0px 0px 5px black;
+	padding-bottom: 20px;
+}
+.article h2,p {
+	color: white;
+	padding: 10px;
+}
+.article h2 {
+	border-bottom: 1px solid orange;
+	font-size: 18pt;
+}
+
+.article p {
+	font-size: 16pt;
+}
+
+.article img {
+	display: block;
+	max-width: 90%;
+	max-height: 800px;
+	overflow-y: scroll;
+	margin: 20px auto 0 auto;
+	text-align: center;
+
+}
