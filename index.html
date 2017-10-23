@@ -13,18 +13,16 @@
 	<div id="body">
 		<div id="articles">
 			<div id="articlehead">
-				<input id="posten" type="checkbox">
-				<label for="posten">Posten</label>
-				<div class="clearfix"></div>
+				<div id="postenline">
+					<div id="posten"><a href="#post">Posten</a></div>
+				</div>
 				<div id="post">
 					<form>
 						<p>Titel</p>
 						<input type="text" />
 						<div>
-							<ul>
-								<li><a href="#bild">Bild</a></li>
-								<li><a href="#text">Text</a></li>
-							</ul>
+							<input type="radio" name="typ" value="Bild" />
+							<input type="radio" name="typ" value="Text" />			
 							<input type="text" id="text" />
 							<input type="button" value="Bild auswählen" id="bild" />
 						</div>

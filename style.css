@@ -41,10 +41,11 @@ body {
 #post {
 	display: none;
 }
-#posten {
-	display: none;
+#postenline {
+	display: flex;
+	justify-content: flex-end;
 }
-#posten ~ label {
+#posten a {
 	font-size: 16pt;
 	background-color: orange;
 	border-radius: 5px;
@@ -54,6 +55,7 @@ body {
 	display: inline-block;
 	float: right;
 	color: black;
+	text-decoration: none;
 }
 .clearfix:after {
 	content: ".";
@@ -62,7 +64,7 @@ body {
 	visibility: hidden;
 	height: 0px;
 }
-#posten:checked ~ #post {
+#post:target {
 	display: block;
 }
 #post form div ul {
@@ -74,6 +76,9 @@ body {
 	padding-bottom: 5px;
 	border-bottom: 1px solid orange;
 }
+#post form div ul li a {
+	text-decoration: none;
+}
 #post form div input {
 	display: none;
 }
@@ -82,10 +87,10 @@ body {
 
 }
 #bild {
-	height: 1.5em;
+	height: 1.5em !important;
 }
 #text {
-	height: 3em;
+	height: 3em !important;
 	resize: vertical;
 	max-height: 10em; 
 }
